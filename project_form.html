@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-image: url('https://wallpaperaccess.com/full/804846.jpg');
+            height: 1000px;
+        }
+        .form{
+            border: 1px solid rgb(59 172 255 / 81%);
+            border-radius: 44px;
+            text-align:start;
+            width: 60%;
+            height: 600px;
+            display: flex;
+            flex-flow: column wrap;
+            position: absolute;
+            top: 85px;
+            left: 44px;        
+            color: rgb(13, 13, 14);
+            padding: 50px;
+            background-color: #84c0dd78;
+            position: fixed;
+            line-height: 30px;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        .form input{
+            width: 250px;
+          
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+    <h2>Whoever wants to join the GYM please fill this form carefully</h2>
+            <form action="backend.php">
+                <br> <div>
+                    <label for="name"> <strong>Name:</strong></label>
+                    <input type="text" name="name" id="name" placeholder="Name" style="border-radius: 3px; border: 3px solid rgb(32, 30, 30); ">
+
+                </div>
+                <br>
+                <div>
+                    <label for="email" ><strong>Email: </strong></label>
+                    <input type="email" name="my email" id="email" placeholder="Email"style="border-radius: 3px; border: 3px solid rgb(32, 30, 30);">
+                </div>
+                <br>
+                <div>
+                    <label for="phone"><strong>Phone: </strong></label>
+                    <input type="number" name="phone" id="phone" placeholder="Phone" style="border-radius: 3px; border: 3px solid rgb(32, 30, 30);">
+                </div>
+                <br>
+                <div>
+                    <label for="gender"><strong>Gender: </strong></label>
+                    male<input type="radio" name="my gender" placeholder="Gender">  female<input type="radio" name="my gender" >  others<input type="radio" name="my gender" id="gender" style="border-radius: 3px; border: 3px solid rgb(32, 30, 30);">
+                </div>
+                <br>
+                <div>
+                    <label for="exercise"> <strong>Exercise:</strong></label>
+                 <select name="exercise" id="exercise" style="border-radius: 3px; border: 3px solid rgb(32, 30, 30);">
+                     <option value="cardio">cardio</option>
+                     <option value="muscle toning">muscle toning</option>
+                     <option value="weight loss">weight loss</option>
+                     <option value="competition">competition</option>
+                 </select>
+                </div>
+                 <br>
+                 <div>
+                     <label for="age"> <strong>Age:</strong></label>
+                    <input type="number" name="age" id="age" placeholder="your age" style="border-radius: 3px; border: 3px solid rgb(32, 30, 30);">
+                 </div>
+                 <br>
+                 <div>
+                     <input type="submit" value="submit now" style="border-radius: 3px; border: 3px solid rgb(32, 30, 30) ; font-weight: bolder;"> 
+                     <input type="reset" value="reset now" style="border-radius: 3px; border: 3px solid rgb(32, 30, 30); font-weight: bolder;">
+
+                 </div>
+                 
+                
+            </form>
+</body>
+</html>
